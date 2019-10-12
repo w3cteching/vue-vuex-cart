@@ -1,1 +1,1 @@
-# vue-vuex-cart
+# 这是一个利用vuex实现的购物车项目
