@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width:100px;
+            height:100px;
+            background:#f00;
+            border-radius:50%;
+            animation:move 3s cubic-bezier(0.26, 1.28, 0.97, -0.23) 1;
+        }
+
+        @keyframes move {
+            0% {
+                transform:translate3d(0,0,0);
+
+            }
+            50% {
+                 transform:translate3d(0,200px,0);
+            }
+            100% {
+                 transform:translate3d(0,0,0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

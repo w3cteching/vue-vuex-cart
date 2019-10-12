@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderCom></HeaderCom>
+  
+       <router-view></router-view>
+    
+    <FooterCom></FooterCom>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderCom from './components/headercom'
+import FooterCom from './components/footercom'
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    FooterCom,
+    HeaderCom,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.move-enter-active {
+    transition: transform .3s;
+}
+
+.move-enter {
+    transform: translate3d(-100%,0,0)
 }
 </style>

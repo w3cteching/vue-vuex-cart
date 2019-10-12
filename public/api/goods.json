@@ -1,0 +1,10 @@
+{
+    "status":2,
+    "statusMsg":"请求成功",
+    "content":[
+        {"id":1001,"name":"ipad2","price":2000},
+        {"id":1002,"name":"ipad23222","price":34636},
+        {"id":1003,"name":"ipad2333","price":234},
+        {"id":1004,"name":"ipad24424","price":2415}
+    ]
+}
